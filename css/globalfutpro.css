@@ -1,0 +1,83 @@
+.header-top-area {
+    background: #031a28;
+}
+
+.header-middle-area {
+    background: #0c2737;
+}
+
+.menu-sticky.sticky {
+    background-color: #0c2737;
+}
+
+.header-top-area .header-top-left ul li a {
+    color: #ffffff;
+}
+
+.header-top-area .social-media-area .log a,
+.header-top-area .social-media-area .sign a {
+    color: #ffffff;
+}
+
+.header-top-area .social-media-area ul li a {
+    color: #ffffff;
+}
+
+.footer-section {
+    background-color: #031a28;
+}
+
+.footer-section .footer-title {
+    border-bottom: 2px solid #999;
+    color: #1da775;
+}
+
+.footer-section .footer-title:after {
+    background-color: #1da775;
+}
+
+.footer-bottom .copyright a {
+    color: #1da775;
+}
+
+#return-to-top {
+    background: #1da775;
+}
+
+.slider-main .dsc .btn-slider .btn1,
+.slider-section2 .dsc .btn-slider .btn1 {
+    border: 2px solid #1da775;
+}
+
+.slider-main .dsc .btn-slider .btn1:hover,
+.slider-section2 .dsc .btn-slider .btn1:hover {
+    background: #1da775;
+}
+
+.slider-main .dsc .btn-slider a,
+.slider-section2 .dsc .btn-slider a {
+    background: #1da775;
+    border: 2px solid #1da775;
+    color: #ffffff;
+}
+
+.slider-main .dsc .btn-slider a:hover,
+.slider-section2 .dsc .btn-slider a:hover {
+    border: 2px solid #1da775;
+    background: transparent;
+    color: #fff;
+}
+
+.slider-main .owl-dots .owl-dot,
+.slider-section2 .owl-dots .owl-dot {
+    width: 15px;
+    height: 15px;
+    background: #1da775;
+    border-radius: 50%;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.title-bg:after {
+    background: #1da775;
+}
