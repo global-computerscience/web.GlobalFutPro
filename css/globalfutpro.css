@@ -81,3 +81,91 @@
 .title-bg:after {
     background: #1da775;
 }
+
+.menu-sticky.sticky .logo img {
+    max-width: 55px;
+}
+
+.contact-page-section .contact-comment-section h3 {
+    color: #031A28;
+    font-size: 24px;
+    text-transform: none;
+    font-weight: 600;
+}
+
+.contact-page-section .contact-comment-section form .form-group input,
+.contact-page-section .contact-comment-section form .form-group select,
+.contact-page-section .contact-comment-section form .form-group textarea {
+    border: none;
+    background: #E0E0E0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.contact-page-section .contact-comment-section form .form-group input:disabled,
+.contact-page-section .contact-comment-section form .form-group select:disabled,
+.contact-page-section .contact-comment-section form .form-group textarea:disabled {
+    border: none;
+    background: #828282;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.contact-page-section .contact-comment-section form .form-group input,
+.contact-page-section .contact-comment-section form .form-group select {
+    height: 43px;
+    padding: 0 15px;
+}
+
+.contact-page-section .contact-comment-section form .form-group label {
+    color: #0C2737;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.contact-page-section .contact-comment-section form .form-group input.btn-clear,
+.contact-page-section .contact-comment-section form .form-group input.btn-clear:hover {
+    background-color: #525252;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 15px;
+    border: none;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-weight: 500;
+    padding: 0 50px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    width: 265px;
+}
+
+.contact-page-section .contact-comment-section form .form-group input.btn-send,
+.contact-page-section .contact-comment-section form .form-group input.btn-send:hover {
+    text-transform: uppercase;
+    background-color: #1da775;
+    color: #ffffff;
+    margin-top: 15px;
+    border: none;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-weight: 500;
+    padding: 0 50px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    width: 320px;
+}
+
+.contact-page-section .contact-comment-section form .form-group input.btn-send:disabled {
+    text-transform: uppercase;
+    background-color: rgba(29, 167, 117, 0.2);
+}
+
+.greenTextLink{
+    color: #1DA775;
+    text-decoration: underline;
+}
