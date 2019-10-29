@@ -132,7 +132,7 @@
 /* Large devices min 992px */
 @media (min-width: 992px) {
    .fullwidth-section2 .rs-menu ul ul {
-        border-top: 4px solid #505050;
+        border-top: 4px solid #FFFFFF;
     }
     .modal-dialog {
         max-width: 670px;
@@ -353,7 +353,7 @@
     .fullwidth-section2 .header-middle-area .rs-menu > ul > li > a,
     .header-middle-area .search .search-btn, 
     .header-middle-area .rs-menu > ul > li > a{
-        color: #ffffff !important;
+        color: #FFFFFF !important;
     }
     body .search-modal .close{
         margin-right: 15px;
@@ -366,7 +366,7 @@
     .header-middle-area .rs-menu > ul > li > a:hover,
     .header-middle-area .rs-menu > ul > li.active > a,
     .fullwidth-section2 .header-middle-area .rs-menu > ul > li.active > a{
-        color: #fbc02d !important;
+        color: #00FF3C !important;
     }
     .header-middle-area4,
     .header-middle-area{
@@ -514,7 +514,7 @@
         color: #644d12;
     }
     .fullwidth-headers3 .header-top-area{
-        background: #FBC02D;
+        background: #00FF3C;
     }
     .sidebar-area .recent-post-area ul li:last-child{
         padding-bottom: 8px;
@@ -539,14 +539,14 @@
     }
     .fullwidth-headers3 .rs-menu > ul > li.active > a, 
     .fullwidth-headers3 .rs-menu .nav-menu > li > a:hover{
-        color: #fbc02d !important;
+        color: #00FF3C !important;
     }
     .fullwidth-headers3 .header-middle-area .search .search-btn,
     .fullwidth-headers3 .rs-menu .nav-menu > li > a{
-         color: #fff !important;
+         color: #FFFFFF !important;
     }
     .fullwidth-headers3 .header-middle-area .search .search-btn:hover{
-        color: #FBC02D !important;
+        color: #00FF3C !important;
     }
     .fullwidth-headers3 .header-middle-area .search {
         right: 15px;
@@ -1005,7 +1005,7 @@
     }
     .champion-section-area .champion-inner .col-sm-10 {
         display: block;
-        background: #fff;
+        background: #FFFFFF;
         width: 100%;
     }
     .champion-section-area .point-menu{
@@ -1029,7 +1029,7 @@
     }
     .testimonil-section-page .slick-current .author-info p {
         padding: 0 10px;
-        color: #111111;
+        color: #FFFFFF;
     }
     .single-blog-details blockquote {
         font-size: 14px;
@@ -1202,7 +1202,7 @@
         text-align: center;
     }
     .slider-section2 .innner-slider .inner-dsc h1 {
-        color: #fff;
+        color: #FFFFFF;
         font-size: 18px;
     }
     .banner-sections .banner-text-area .banner-innner h1{

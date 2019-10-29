@@ -512,19 +512,19 @@
         $(".CountDownTimer").TimeCircles({
             fg_width: 0.030,
             bg_width: 0.8,
-            circle_bg_color: "#ffffff",
+            circle_bg_color: "#FFFFFF",
             time: {
                 Days:{
-                    color: "#fbc02d"
+                    color: "#00FF3C"
                 },
                 Hours:{
-                    color: "#fbc02d"
+                    color: "#00FF3C"
                 },
                 Minutes:{
-                    color: "#fbc02d"
+                    color: "#00FF3C"
                 },
                 Seconds:{
-                    color: "#fbc02d"
+                    color: "#00FF3C"
                 }
             }
         });	

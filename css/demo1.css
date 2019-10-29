@@ -1,22 +1,22 @@
  .anim-slide h1
   {
     color:#225A86;
-    background-color: #fff;
+    background-color: #FFFFFF;
     font-size: 50px;
   }
   .anim-slide h2
   {
-    color: #fff;
+    color: #FFFFFF;
     font-size: 35px;
   }
   .anim-slide h3
   {
-    color: #fff;
+    color: #FFFFFF;
     font-size: 30px;
   }
   .anim-slide h4
   {
-    color: #fff;
+    color: #FFFFFF;
     font-size: 25px;
   }
   .anim-slide h1#slider{text-shadow: -1px 1px 0px;padding: 6px;width:100%;}
@@ -43,7 +43,7 @@
   
   div#demo{text-align: center;}
   div#demo>a{display:inline-block;text-decoration: none;}
-  div#demo>a>h4{padding: 5px 8px;margin: 20px;background-color: #225A86;color: #fff;box-shadow:inset 0 -2px 0 rgba(0,0,0,0.15);}
+  div#demo>a>h4{padding: 5px 8px;margin: 20px;background-color: #225A86;color: #FFFFFF;box-shadow:inset 0 -2px 0 rgba(0,0,0,0.15);}
   p#credits{z-index:-1;position: fixed;bottom: 0px;width: 100%;text-align: center;font-size: 14px;}
   p#credits>a{font-weight: bold;color: #999;text-decoration: none;}
   img#github-logo{z-index:-1;position: fixed;bottom: -20px;right: 2%;opacity: 0.4;}
