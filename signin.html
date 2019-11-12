@@ -41,7 +41,25 @@
 			.d-xs-block {
 				display: none !important;
 			}
-		}
+        }
+        
+        .btn-send {
+            text-transform: uppercase;
+            color: #111111;
+            background-color: #00FF3C;
+            margin-top: 15px;
+            border: none;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-weight: 500;
+            padding: 0 50px;
+            transition: 0.4s;
+            -webkit-transition: 0.4s;
+            -ms-transition: 0.4s;
+            width: 100%;
+            margin-top: 25px;
+        }
 	</style>
 	<body class="home-two">
 		<!--Preloader start here-->
@@ -132,276 +150,32 @@
 		<div class="contact-page-section sec-spacer">
         	<div class="container">
         		<div class="contact-comment-section">
-					<form class="needs-validation" id="contact-form" method="post" action="#" novalidate>
-						<h3>Informações Pessoais</h3>
-						<div class="row">
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="z-Index: 60;">
-								<fieldset>
-									<div class="row">
-										<div class="col-md-1 col-sm-12 col-xs-12 d-xs-block" style="display: flex; height: 102px; justify-content: center;">
-											<span style="background: #00FF3C; border-radius: 50%; height: 65px; position: relative; top: 10px; width: 65px;"></span>
-										</div>
-										<div class="col-lg-8 col-md-9 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>Imagem de Perfil*</label>
-												<div class="selecioneImagemWrapper">
-													<input type="file" style="display: none" id="inputfile"/>
-													<input readonly id="profile-img" class="input form-control" type="text" placeholder="Selecionar imagem em seu computador">
-													<button type="btn button" class="greenBackgroundButton" id="search-img">PROCURAR</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</fieldset>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="z-Index: 60;">
-								<fieldset>
-									<div class="row">                                      
-										<div class="col-md-9 col-sm-12 col-xs-12"> 	
-											<div class="form-group">
-												<label for="fname">Nome Completo*</label>
-												<input name="fname" id="fname" class="form-control" type="text" required>
-												<div class="invalid-feedback">Preencha o campo corretamente.</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="row">
-										<div class="col-md-4 col-sm-4 col-xs-12">
-											<div class="form-group">
-												<label>CPF*</label>
-												<input name="fcpf" id="fcpf" class="form-control" type="email" placeholder="Somente números" required>
-												<div class="invalid-feedback">Preencha o campo corretamente.</div>
-											</div>
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-12">
-											<div class="form-group">
-												<label>Gênero *</label>
-												<select name="fgenero" id="fgenero" class="form-control">
-													<option>Feminino</option>
-													<option>Masculino</option>
-												</select>
-											</div>
-										</div>
-										<div class="col-md-3 col-sm-4 col-xs-12">
-											<div class="form-group">
-												<label>Data de Nascimento *</label>
-												<input name="fdatanascimento" id="fdatanascimento" class="form-control" type="text" placeholder="DD/MM/AAAA" required>
-												<div class="invalid-feedback">Preencha o campo corretamente.</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="row">                                      
-										<div class="col-md-9 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>E-mail *</label>
-												<input name="femail" id="femail" class="form-control" type="text" required>
-												<div class="invalid-feedback">Preencha o campo corretamente.</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="row">                                      
-										<div class="col-md-9 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>Confirmar E-mail *</label>
-												<input name="fconfirmaremail" id="fconfirmaremail" class="form-control" type="text" required>
-												<div class="invalid-feedback">Preencha o campo corretamente.</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="row">                                      
-										<div class="col-md-4 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>Telefone Celular *</label>
-												<input name="fcelular" id="fcelular" class="form-control" type="text" required>
-												<div class="invalid-feedback">Preencha o campo corretamente.</div>
-											</div>
-										</div>
-									</div>
-								</fieldset>
-							</div>
-
-							<div class="d-none d-sm-none d-md-block" style="right: 40px; position: absolute; top: 170px; z-Index: 50;">
-								<img src="./images/signup-player.png"/>
-							</div>
-						</div>
-
-						<br />
-						<br />
-
-						<h3>Endereço</h3>
-						<div class="row">
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="z-Index: 60;">
-								<fieldset>
-									<div class="row">                                      
-										<div class="col-md-4 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>CEP *</label>
-												<input name="fcep" id="fcep" class="form-control" type="text" placeholder="Somente números" required>
-												<div class="invalid-feedback">Preencha o campo corretamente.</div>
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-9 col-sm-4 col-xs-12">
-											<div class="form-group">
-												<label>Endereço *</label>
-												<input name="fendereco" id="fendereco" class="form-control" type="text" readonly required>
-												<div class="invalid-feedback">Preencha o campo corretamente.</div>
-											</div>
-										</div>
-										<div class="col-md-3 col-sm-4 col-xs-12">
-											<div class="form-group">
-												<label>Número *</label>
-												<input name="fnumero" id="fnumero" class="form-control" type="text" required>
-												<div class="invalid-feedback">Preencha o campo corretamente.</div>
-											</div>
-										</div>
-									</div>
-									<div class="row">                                      
-										<div class="col-md-6 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>Complemento *</label>
-												<input name="fcomplemento" id="fcomplemento" class="form-control" type="text" required>
-												<div class="invalid-feedback">Preencha o campo corretamente.</div>
-											</div>
-										</div>
-										<div class="col-md-6 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>Bairro *</label>
-												<input name="fbairro" id="fbairro" class="form-control" type="text" required>
-												<div class="invalid-feedback">Preencha o campo corretamente.</div>
-											</div>
-										</div>
-									</div>
-									<div class="row">                                      
-										<div class="col-md-4 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>Estado *</label>
-												<input name="festado" id="festado" class="form-control" type="text" readonly required>
-												<div class="invalid-feedback">Preencha o campo corretamente.</div>
-											</div>
-										</div>
-										<div class="col-md-4 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>Cidade *</label>
-												<input name="fcidade" id="fcidade" class="form-control" type="text" readonly required>
-												<div class="invalid-feedback">Preencha o campo corretamente.</div>
-											</div>
-										</div>
-										<div class="col-md-4 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>País *</label>
-												<input name="fpais" id="fpais" class="form-control" type="text" readonly required>
-												<div class="invalid-feedback">Preencha o campo corretamente.</div>
-											</div>
-										</div>
-									</div>
-								</fieldset>
-							</div>
-						</div>
-
-						<br />
-						<br />
-
-						<h3>Redes Sociais</h3>
-						<div class="row">
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								<fieldset>
-									<div class="row">                                      
-										<div class="col-md-7 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>Instagram</label>
-												<input name="finstagram" id="finstagram" class="form-control" type="text" placeholder="Preencha com o link completo">
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-7 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>Youtube</label>
-												<input name="fyoutube" id="fyoutube" class="form-control" type="text" placeholder="Preencha com o link completo">
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-7 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>Twitch.TV</label>
-												<input name="ftwitchtv" id="ftwitchtv" class="form-control" type="text" placeholder="Preencha com o link completo">
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-7 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>Twitter</label>
-												<input name="ftwitter" id="ftwitter" class="form-control" type="text" placeholder="Preencha com o link completo">
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-7 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>Facebook</label>
-												<input name="ffacebook" id="ffacebook" class="form-control" type="text" placeholder="Preencha com o link completo">
-											</div>
-										</div>
-									</div>
-								</fieldset>
-							</div>
-						</div>
-
-						<br />
-						<br />
-
-						<h3>Segurança</h3>
-						<div class="row">
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								<fieldset>
-									<div class="row">                                      
-										<div class="col-md-5 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>Crie uma senha *</label>
-												<input name="fsenha" id="fsenha" class="form-control" type="password" required>
-												<div class="invalid-feedback">Preencha o campo corretamente.</div>
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-5 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>Confirme a senha *</label>
-												<input name="fconfirmarsenha" id="fconfirmarsenha" class="form-control" type="password" required>
-												<div class="invalid-feedback">Preencha o campo corretamente.</div>
-											</div>
-										</div>
-									</div>
-								</fieldset>
-							</div>
-						</div>
-
-						<hr />
-
-						<div class="row">
-							<div class="col-md-12 col-sm-12 col-xs-12">
-								<input id="agreements" type="checkbox">
-								<label for="agreements">Eu li e concordo com os <a class="greenTextLink" href="">Temos e Condições</a>  GlobalFutPro. *</label>
-							</div>
-							<div class="col-md-12 col-sm-12 col-xs-12" style="display: flex; flex-direction: row; justify-content: space-between;">
-								<div class="form-group mb-0">
-									<input class="btn-clear" type="button" value="LIMPAR DADOS">
-								</div>
-								<div class="form-group mb-0">
-									<input class="btn-send" type="submit" value="CRIAR CONTA" disabled>
-								</div>
-							</div>
-						</div>
+                    <form class="needs-validation" id="contact-form" method="post" action="#" novalidate>
+                        <div class="row" style="display: flex; justify-content: center;">
+                            <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                                <span style="display: flex; margin: 30px 0; font-size: 36px; font-weight: 600;">LOGIN</span>
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="form-group" style="margin-bottom: 0px">
+                                                <img src="images/signin/form-login-user.svg" style="position: relative; top: 35px; left: 10px" />
+                                                <input name="fname" id="fname" class="form-control" type="text" required>
+                                                <div class="invalid-feedback">Preencha o campo corretamente.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="form-group" style="margin-bottom: 0px">
+                                                <img src="images/signin/form-login-senha.svg" style="position: relative; top: 35px; left: 10px" />
+                                                <input name="fpassword" id="fpassword" class="form-control" type="password" required>
+                                                <div class="invalid-feedback">Preencha o campo corretamente.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <input class="btn-send" type="submit" value="ENTRAR">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 					</form>
         		</div>
         	</div>
@@ -525,15 +299,6 @@
 		<script src="js/main.js"></script>
 
 		<script>
-			document.getElementById("search-img").addEventListener("click", function(){ 
-				const inputfile = document.getElementById("inputfile")
-				inputfile.click();
-			}); 
-			document.getElementById("inputfile").addEventListener('change', function(){
-				const name = document.getElementById("profile-img");
-				name.value = this.value;
-			});
-
 			(function() {
 				'use strict';
 				window.addEventListener('load', function() {
