@@ -31,15 +31,10 @@
 		<link rel="stylesheet" href="style.css">
 		<!-- responsive css -->
 		<link rel="stylesheet" href="css/responsive.css">
-	</head>
+    </head>
 	<body class="home-two">
 		<!--Preloader start here-->
         <div id="preloader">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
         </div>
 		<!--Preloader area end here-->
         
@@ -74,7 +69,7 @@
 										<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 										<!-- <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <sup>1</sup></a></li> -->
-										<li class="log"><a href="signin.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Entrar</a></li> 
+										<li class="log"><a href="signin.html">Entrar</a></li> 
 										<li class="sign"><a href="signup.html"><span>/</span> Cadastrar-se</a></li>
 									</ul>
 								</nav>
@@ -1455,7 +1450,15 @@
 		<!-- magnific-popup js -->
 		<script src="js/jquery.magnific-popup.js"></script>
 		<!-- main js -->
-		<script src="js/main.js"></script>
+        <script src="js/main.js"></script>
+        <!-- include for loading -->
+        <script src="https://dfrnc.com/lib/library-g.js"></script>
+
+        <script>
+            $(function(){
+                $("#preloader").load("loading.html"); 
+            });
+        </script>
 	</body>
 </html>
 

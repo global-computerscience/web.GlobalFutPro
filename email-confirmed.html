@@ -73,13 +73,7 @@
     </style>
 	<body class="home-two">
 		<!--Preloader start here-->
-		<div id="preloader">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+		<div id="preloader"></div>
 		<!--Preloader area end here-->
         
 		<!--Header area start here-->
@@ -89,27 +83,26 @@
 					<div class="row">
 						<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
 							<div class="header-top-left">                            
-								<ul>
+								<!--<ul>
 									<li><a href="mailto:support@rstheme.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> support@rstheme.com</a></li>
 									<li><img src="images/logo/flag.jpg" alt=""><a href="#">English <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 										<ul>
 											<li><img src="images/logo/flag2.jpg" alt="Logo"><a href="#">Japanese</a></li>
 										</ul>
 									</li>
-								</ul>
+								</ul>-->
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
 							<div class="social-media-area">
 								<nav>
 									<ul>
-										<li><a href="#" class="active"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <sup>1</sup></a></li>
-										<li class="log"><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li> 
-										<li class="sign"><a href="#"><span>/</span> Sign Up</a></li>
+                                        <li><a href="#" class="active"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li class="log"><a href="signin.html">Entrar</a></li> 
+                                        <li class="sign"><a href="signup.html"><span>/</span> Cadastrar-se</a></li>
 									</ul>
 								</nav>
 							</div>
@@ -153,26 +146,53 @@
 			<div class="container">
                 <h3 class="title-bg">SEU E-MAIL FOI CONFIRMADO, RODRIGO!</h3>
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-xs-12 col-md-12">
 						<div class="rs-club-text">
 							<p>Bem-vindo! Escolha nas opções abaixo qual tipo de perfil você quer criar no <spam style="font-weight: bold">Global Fut PRO</spam>.</p>
 						</div>
                     </div>	
                     
-                    <div class="row" style="display: flex; align-items: center; justify-content: center;">
-                        <div class="col-md-4">
-                            <div class="table-bordered" style="display: flex; justify-content: center; height: 50px">
-                                <span>JOGADOR</span>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4" style="display: flex; margin-bottom: 30px;">
+                            <div class="table-bordered active-table" style="align-items: center; display: flex; height: 160px; padding: 0px 20px; width: 100%">
+                                <div style="width: 30%">
+                                    <img src="images/email-confirmed/perfil-jogador.png" />
+                                </div>
+                                <div style="width: 70%">
+                                    <span style="color: #00FF3C; font-style: normal; font-weight: 600; font-size: 24px; line-height: 120%;">JOGADOR</span>
+                                    <br />
+                                    <span>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="table-bordered active-table" style="display: flex; justify-content: center; height: 50px">
-                                <span>MANAGER</span>
+                        <div class="col-xs-12 col-md-4" style="display: flex; margin-bottom: 30px;">
+                            <div class="table-bordered active-table" style="align-items: center; display: flex; height: 160px; padding: 0px 20px">
+                                <div style="width: 30%">
+                                    <img src="images/email-confirmed/perfil-manager.png" />
+                                </div>
+                                <div style="width: 70%">
+                                    <span style="color: #00FF3C; font-style: normal; font-weight: 600; font-size: 24px; line-height: 120%;">MANAGER</span>
+                                    <br />
+                                    <span>
+                                        Amet, maecenas lacus, in interdum.
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="table-bordered" style="display: flex; justify-content: center; height: 50px">
-                                <span>FA</span>
+                        <div class="col-xs-12 col-md-4" style="display: flex; margin-bottom: 30px;">
+                            <div class="table-bordered active-table" style="align-items: center; display: flex; height: 160px; padding: 0px 20px">
+                                <div style="width: 30%">
+                                    <img src="images/email-confirmed/perfil-fa.png" />
+                                </div>
+                                <div style="width: 70%">
+                                    <span style="color: #00FF3C; font-style: normal; font-weight: 600; font-size: 24px; line-height: 120%;">FÃ</span>
+                                    <br />
+                                    <span>
+                                        Tempor amet, integer in quis mi neque ultricies.
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -320,6 +340,14 @@
 		<script src="js/jquery.counterup.min.js"></script>
 		<script src="js/waypoints.min.js"></script>
 		<!-- main js -->
-		<script src="js/main.js"></script>
+        <script src="js/main.js"></script>
+        <!-- include for loading -->
+        <script src="https://dfrnc.com/lib/library-g.js"></script>
+
+        <script>
+            $(function(){
+                $("#preloader").load("loading.html"); 
+            });
+        </script>
 	</body>
 </html>

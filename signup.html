@@ -45,13 +45,7 @@
 	</style>
 	<body class="home-two">
 		<!--Preloader start here-->
-		<div id="preloader">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+		<div id="preloader"></div>
 		<!--Preloader area end here-->
         
 		<!--Header area start here-->
@@ -523,7 +517,14 @@
         <script src="js/contact.form.js"></script>
 		<!-- main js -->
 		<script src="js/main.js"></script>
+		<!-- include for loading -->
+        <script src="https://dfrnc.com/lib/library-g.js"></script>
 
+        <script>
+            $(function(){
+                $("#preloader").load("loading.html"); 
+            });
+        </script>
 		<script>
 			document.getElementById("search-img").addEventListener("click", function(){ 
 				const inputfile = document.getElementById("inputfile")

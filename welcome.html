@@ -90,96 +90,90 @@
             border: 1px solid #C4C4C4;
             margin-bottom: 40px;
         }
-.mainProfileInfos{
-    height: 210px;
-    display: flex;
-  
-}
+        .mainProfileInfos{
+            height: 210px;
+            display: flex;
+        
+        }
 
-.welcomePageProfilePhotoContainer{
-    width: 210px;
-    height: 210px;
-    overflow: hidden;
-}
+        .welcomePageProfilePhotoContainer{
+            width: 210px;
+            height: 210px;
+            overflow: hidden;
+        }
 
-.WelcomePageProfilePhoto{
-    height: 210px;
+        .WelcomePageProfilePhoto{
+            height: 210px;
 
-}
+        }
 
-.welcomePageProfileInfosContainer{
-    width: 75%;
-    padding: 15px;
-    font-size: 18px
-}
+        .welcomePageProfileInfosContainer{
+            width: 75%;
+            padding: 15px;
+            font-size: 18px
+        }
 
-.welcomePageProfileInfosContainer p{
-    display: flex;
-}
+        .welcomePageProfileInfosContainer p{
+            display: flex;
+        }
 
-.welcomePageProfileInfosContainer p img{
-    margin-right: 15px;
-}
+        .welcomePageProfileInfosContainer p img{
+            margin-right: 15px;
+        }
 
-.welcomePageProfileName{
-    font-size: 30px;
-    font-weight: 500;
-    width:700px;
-    
-}
+        .welcomePageProfileName{
+            font-size: 30px;
+            font-weight: 500;
+            width:700px;
+            
+        }
 
-.welcomePageProfileFirstInfosContainer{
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-}
+        .welcomePageProfileFirstInfosContainer{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+        }
 
-.welcomePageProfileAdressContainer{
-    border-top: 1px solid #C4C4C4;
-    border-bottom: 1px solid #C4C4C4;
-    font-size: 18px;
-    line-height: 14px;
-    display: flex;
-    flex-direction: column;
-    padding: 15px
-}
+        .welcomePageProfileAdressContainer{
+            border-top: 1px solid #C4C4C4;
+            border-bottom: 1px solid #C4C4C4;
+            font-size: 18px;
+            line-height: 14px;
+            display: flex;
+            flex-direction: column;
+            padding: 15px
+        }
 
-.welcomePageProfileAdressContainer > span{
-    padding: 10px;
-}
+        .welcomePageProfileAdressContainer > span{
+            padding: 10px;
+        }
 
-.welcomePageProfileSocialNetworksContainer{
-    height: 95px;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-}
+        .welcomePageProfileSocialNetworksContainer{
+            height: 95px;
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+        }
 
-.socialNetworksRoundGreenContainers{
-    width: 48px;
-    height: 48px;
+        .socialNetworksRoundGreenContainers{
+            width: 48px;
+            height: 48px;
 
-    border-radius: 50%;
-    background: #1DA775;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 30px;
-}
+            border-radius: 50%;
+            background: #1DA775;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 30px;
+        }
 
-.welcomePageSociaNetworkIcon{
-    height: 35px;
-}
+        .welcomePageSociaNetworkIcon{
+            height: 35px;
+        }
     </style>
 	<body class="home-two">
 		<!--Preloader start here-->
-		<div id="preloader">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+		<div id="preloader"></div>
 		<!--Preloader area end here-->
         
 		<!--Header area start here-->
@@ -490,6 +484,14 @@
 		<script src="js/jquery.counterup.min.js"></script>
 		<script src="js/waypoints.min.js"></script>
 		<!-- main js -->
-		<script src="js/main.js"></script>
+        <script src="js/main.js"></script>
+        <!-- include for loading -->
+        <script src="https://dfrnc.com/lib/library-g.js"></script>
+
+        <script>
+            $(function(){
+                $("#preloader").load("loading.html"); 
+            });
+        </script>
 	</body>
 </html>
