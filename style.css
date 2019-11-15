@@ -56,6 +56,24 @@ body {
 /* ....................................
 1. General CSS
 .......................................*/
+
+/*.image-about {
+  width: 4;
+}*/
+
+.justify-text-about {
+  text-align: justify;
+}
+.image-about-end-center {
+  margin: auto;
+  width: 50%;
+}
+.image-about-end {
+  width: 100%;
+}
+.color-about {
+  color: #00FF3C;
+}
 .floatleft {
   float: left;
 }
@@ -3134,6 +3152,13 @@ body .modal-backdrop {
   overflow: hidden;
   position: relative;
 }
+
+.our-team-section-novidades
+{
+  background-size: 100% 640px;
+  background-repeat: no-repeat;
+  background-image: url("./images/bg-novidades.jpg");
+}
 .our-team-section .our-team .person-details {
   padding: 20px 15px;
   position: absolute;
@@ -3854,8 +3879,8 @@ body .modal-backdrop {
 ---------------------------------------*/
 .champion-awards-section {
   position: relative;
-  background: url(images/awards-bg.jpg);
-  background-size: cover;
+  background: url(images/br-times_fazendo_historia.jpg);
+  background-size: 100% 650px;
 }
 .champion-awards-section h3.title-bg {
   color: #FFFFFF;
@@ -4215,12 +4240,15 @@ body .modal-backdrop {
 /* ------------------------------------
 16 Clicent Logo Section
 ---------------------------------------*/
+.clicent-logo-section-bg {
+  background-color: #ffffff !important;
+}
 .clicent-logo-section,
 .clicent-logo-section2 {
   padding-bottom: 50px;
   position: relative;
-  background: url(images/awards-bg.jpg);
-  background-size: cover;
+  /*background: url(images/awards-bg.jpg);
+  background-size: cover; */
 }
 .clicent-logo-section .single-logo,
 .clicent-logo-section2 .single-logo {
@@ -4908,14 +4936,18 @@ body .modal-backdrop {
 20  Footer Section Start here 
 ---------------------------------------*/
 .footer-section {
-  background-color: #FFFFFF;
-  color: #505050;
+ /*background-color: #FFFFFF;*/
+ /*color: #505050;*/
+ background: linear-gradient(to right, rgba(65,10,120,.8), rgba(65,10,120,.8), rgba(50,10,100,.4), rgba(50,10,100,.4));
+ /*background: #333333;*/
+ color: #FFFFFF;
 }
+
 .footer-section .footer-title {
   margin-bottom: 35px;
   padding-bottom: 12px;
   border-bottom: 2px solid #999;
-  color: #111111;
+  color: #FFFFFF;
   font-size: 18px;
   position: relative;
   font-weight: 500;
@@ -4987,7 +5019,7 @@ body .modal-backdrop {
   overflow: hidden;
 }
 .footer-section .footer-top .sitemap-widget li a {
-  color: #505050;
+  color: #FFFFFF;
   display: block;
   border-bottom: 1px solid rgba(102, 102, 102, 0.5);
   position: relative;
@@ -5049,7 +5081,7 @@ body .modal-backdrop {
   display: block;
   line-height: 1.428571429;
   color: #111111;
-  background-color: #111111;
+  background-color: #FFFFFF;
   outline: none;
   width: 100%;
   font-weight: 400;
@@ -6108,11 +6140,7 @@ body .modal-backdrop {
 28.Preloader CSS Start here 
 ---------------------------------------*/
 #preloader {
-  /* background-color: #101010; */
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  background-color: #2b2d2f;
+  background-color: #101010;
   height: 100%;
   width: 100%;
   position: fixed;
