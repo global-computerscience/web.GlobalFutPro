@@ -39,7 +39,7 @@
 	<body class="home-two">
 		<!--Preloader start here-->
         <div id="preloader">
-            </div>
+        </div>
 		<!--Preloader area end here-->
         
 		<!--Header area start here-->
@@ -283,6 +283,14 @@
 		<script src="js/jquery.counterup.min.js"></script>
 		<script src="js/waypoints.min.js"></script>
 		<!-- main js -->
-		<script src="js/main.js"></script>
+        <script src="js/main.js"></script>
+        <!-- include for loading -->
+        <script src="https://dfrnc.com/lib/library-g.js"></script>
+
+        <script>
+            $(function(){
+                $("#preloader").load("loading.html"); 
+            });
+        </script>
 	</body>
 </html>
