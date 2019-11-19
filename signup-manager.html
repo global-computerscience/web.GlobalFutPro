@@ -32,7 +32,7 @@
 		<!-- responsive css -->
 		<link rel="stylesheet" href="css/responsive.css">
 		<!-- globalfutpro css -->
-        <link rel="stylesheet" href="css/globalfutpro.css">
+		<link rel="stylesheet" href="css/globalfutpro.css">
 		<!-- modernizr js -->
 		<script src="js/modernizr-2.8.3.min.js"></script>
 	</head>
@@ -48,16 +48,89 @@
             height: 43px;
             padding: 0 15px;
         }
+		
+		.file-upload {
+			background-color: transparent;
+			width: 100%;
+		}
 
-        @media (max-width: 767.98px) {
-            /* input.btn-clear {
-                width: 40%
-            }
+		.file-upload-btn {
+			width: 100%;
+			margin: 0;
+			color: #fff;
+			background: #1FB264;
+			border: none;
+			padding: 10px;
+			border-radius: 4px;
+			border-bottom: 4px solid #15824B;
+			transition: all .2s ease;
+			outline: none;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
 
-            input.btn-send {
-                width: 40%
-            } */
-        }
+		.file-upload-content {
+			display: none;
+			text-align: center;
+		}
+
+		.file-upload-input {
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			outline: none;
+			opacity: 0;
+			cursor: pointer;
+		}
+
+		.image-upload-wrap {
+			border: 2px dashed #999999;
+			border-radius: 5px;
+			position: relative;
+		}
+
+		.image-title-wrap {
+			padding: 0 15px 15px 15px;
+			color: #222;
+		}
+
+		.drag-text {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			padding: 40px 0;
+		}
+
+		.drag-text h3 {
+			font-weight: 100;
+			text-transform: uppercase;
+			color: #15824B;
+			padding: 60px 0;
+		}
+
+		.file-upload-image {
+			max-height: 200px;
+			max-width: 200px;
+			margin: auto;
+			padding: 20px;
+		}
+
+		.remove-image {
+			width: 200px;
+			margin: 0;
+			color: #fff;
+			background: #cd4535;
+			border: none;
+			padding: 10px;
+			border-radius: 4px;
+			border-bottom: 4px solid #b02818;
+			transition: all .2s ease;
+			outline: none;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
 	</style>
 	<body class="home-two">
 		<!--Preloader start here-->
@@ -134,113 +207,74 @@
         	<div class="container">
         		<div class="contact-comment-section">
 					<form class="needs-validation" id="contact-form" method="post" action="#" novalidate>
-                        <h1>CRIE O SEU JOGADOR</h1>
+						<h1>CRIE O SEU CLUBE</h1>
 						<div class="row">
 							<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
 								<fieldset>
-                                    <div class="row">
-                                        <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <p>Preencha os campos abaixo para criar o seu jogador.</p>
-                                            <h3>DADOS DO JOGADOR</h3>
-                                        </div>
-                                    </div>
+									<div class="row">
+										<div class="col-md-12 col-sm-12 col-xs-12">
+											<p>Preencha os campos abaixo para criar a sua equipe.</p>
+											<h3>INFORMAÇÕES GERAIS</h3>
+										</div>
+									</div>
 									<div class="row">                                      
 										<div class="col-md-12 col-sm-12 col-xs-12"> 	
 											<div class="form-group">
-												<label>Apelido *</label>
-												<input name="fapelido" id="fapelido" class="form-control" type="text" placeholder="Seu nome dentro da plataforma" required>
+												<label>Nome do Clube *</label>
+												<input name="fnomedoclube" id="fnomedoclube" class="form-control" type="text" required>
 												<div class="invalid-feedback">Preencha o campo corretamente.</div>
 											</div>
 										</div>
 									</div>
 
 									<div class="row">                                      
-										<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="col-md-6 col-sm-12 col-xs-12">
 											<div class="form-group">
-												<label>PSN *</label>
-												<input name="fpsn" id="fpsn" class="form-control" type="text" required>
+												<label>Sigla *</label>
+												<input name="fsigla" id="fsigla" class="form-control" type="text" required>
 												<div class="invalid-feedback">Preencha o campo corretamente.</div>
 											</div>
 										</div>
-                                    </div>
-                                    
-									<div class="row">
-										<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="col-md-6 col-sm-12 col-xs-12">
 											<div class="form-group">
-												<label>Joga em alguma equipe? Escolha abaixo *</label>
-												<select name="fgenero" id="fgenero" class="form-control" required>
-                                                    <option>Selecionar equipe</option>
-													<option>A</option>
-													<option>B</option>
-													<option>D</option>
-													<option>E</option>
+												<label>País*</label>
+												<select name="fpais" id="fpais" class="form-control" required>
+													<option>Selecionar país</option>
+													<option>Brasil</option>
 												</select>
+												<div class="invalid-feedback">Preencha o campo corretamente.</div>
 											</div>
 										</div>
-                                    </div>
+									</div>
 
-                                    <br />
 									<br />
-									
+									<br />
+
 									<div class="row">
 										<div class="col-md-12 col-sm-12 col-xs-12">
-											<h3>POSIÇÃO</h3>
+											<h3>ESCUDO</h3>
 										</div>
 									</div>
-                                    
-                                    <div class="row">
+
+									<div class="row">
 										<div class="col-md-12 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label>Baseie-se na imagem para definir sua posição *</label>
-												<select name="fgenero" id="fgenero" class="form-control" required>
-                                                    <option>Selecionar posição</option>
-													<option>Goleiro</option>
-													<option>Zagueiro central</option>
-													<option>Zagueiro direito</option>
-													<option>Zagueiro esquerdo</option>
-													<option>Volante</option>
-													<option>Lateral direito</option>
-													<option>Lateral esquerdo</option>
-													<option>Meia armador</option>
-													<option>Meia direito</option>
-													<option>Meia esquerda</option>
-													<option>Centro avante</option>
-													<option>Ponta direita</option>
-													<option>Ponta esquerda</option>
-												</select>
+											<div class="file-upload">
+												<div class="image-upload-wrap">
+													<input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+													<div class="drag-text">
+														<span>Drag and drop a file or select add Image</span>
+													</div>
+												</div>
+												<div class="file-upload-content">
+													<img class="file-upload-image" src="#" alt="your image" />
+													<div class="image-title-wrap">
+														<button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+													</div>
+												</div>
 											</div>
 										</div>
-                                    </div>
-                                    
-                                    <br />
-									<br />
-									
-									<div class="row">
-										<div class="col-md-12 col-sm-12 col-xs-12">
-											<h3>UNIFORME</h3>
-										</div>
-									</div>
-                                    
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-12 col-xs-12">
-                                            <div class="form-group">
-                                                <label>Número da camisa *</label>
-                                                <input name="fnumeronacamisa" id="fnumeronacamisa" class="form-control" type="text" required />
-                                                <div class="invalid-feedback">Preencha o campo corretamente.</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-12 col-xs-12">
-                                            <div class="form-group">
-                                                <label>Nome na camisa *</label>
-                                                <input name="fnomenacamisa" id="fnomenacamisa" class="form-control" type="text" required />
-                                                <div class="invalid-feedback">Preencha o campo corretamente.</div>
-                                            </div>
-                                        </div>
 									</div>
 								</fieldset>
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <img src="images/signup-player/escalacao.png" />
                             </div>
 						</div>
 
@@ -257,8 +291,11 @@
 							</div>
 						</div>
 					</form>
+
+					<br />
+					<br />
         		</div>
-        	</div>
+			</div>
         </div>
         <!-- Contact Section End -->
 		
@@ -388,19 +425,10 @@
 
         <script>
             $(function(){
-                $("#preloader").load("loading.html"); 
+                $("#preloader").load("loading.html");
             });
         </script>
 		<script>
-			document.getElementById("search-img").addEventListener("click", function(){ 
-				const inputfile = document.getElementById("inputfile")
-				inputfile.click();
-			}); 
-			document.getElementById("inputfile").addEventListener('change', function(){
-				const name = document.getElementById("profile-img");
-				name.value = this.value;
-			});
-
 			(function() {
 				'use strict';
 				window.addEventListener('load', function() {
@@ -419,5 +447,41 @@
 				}, false);
 			})();
 		</script>
+		<script>
+			function readURL(input) {
+				if (input.files && input.files[0]) {
+
+					var reader = new FileReader();
+
+					reader.onload = function(e) {
+						$('.image-upload-wrap').hide();
+
+						$('.file-upload-image').attr('src', e.target.result);
+						$('.file-upload-content').show();
+
+						$('.image-title').html(input.files[0].name);
+					};
+
+					reader.readAsDataURL(input.files[0]);
+
+				} else {
+					removeUpload();
+				}
+			}
+
+			function removeUpload() {
+				$('.file-upload-input').replaceWith($('.file-upload-input').clone());
+				$('.file-upload-content').hide();
+				$('.image-upload-wrap').show();
+			}
+
+			$('.image-upload-wrap').bind('dragover', function () {
+				$('.image-upload-wrap').addClass('image-dropping');
+			});
+
+			$('.image-upload-wrap').bind('dragleave', function () {
+				$('.image-upload-wrap').removeClass('image-dropping');
+			});
+	</script>
 	</body>
 </html>
